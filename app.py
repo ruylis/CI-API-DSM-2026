@@ -21,3 +21,11 @@ def aluno():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+@app.route("/livros")
+def livros():
+    return jsonify({"livros": ["Python Fluente", "Clean Code", "O Programador Pragmático"]})
+
+if __name__ == "__main__":
+    app.run(debug=True)
+    
