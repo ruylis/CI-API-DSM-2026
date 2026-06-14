@@ -30,6 +30,10 @@ def livros():
 def autores():
     return jsonify({"autores": ["Luciano Ramalho", "Robert C. Martin", "Andrew Hunt"]})
 
+@app.route("/contato")
+def contato():
+    return jsonify({"email": "contato@ciapi.com", "telefone": "(11) 99999-9999"})
+
 if __name__ == "__main__":
     app.run(debug=True)
     
