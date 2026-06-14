@@ -11,5 +11,9 @@ def home():
 def status():
     return jsonify({"status": "ok"})
 
+@app.route("/sobre")
+def sobre():
+    return jsonify({"projeto": "CI-API-DSM-2026", "aluno": "Ruylis", "semestre": "1º DSM"})
+
 if __name__ == "__main__":
     app.run(debug=True)
