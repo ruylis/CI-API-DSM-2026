@@ -26,6 +26,10 @@ if __name__ == "__main__":
 def livros():
     return jsonify({"livros": ["Python Fluente", "Clean Code", "O Programador Pragmático"]})
 
+@app.route("/autores")
+def autores():
+    return jsonify({"autores": ["Luciano Ramalho", "Robert C. Martin", "Andrew Hunt"]})
+
 if __name__ == "__main__":
     app.run(debug=True)
     
