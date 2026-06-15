@@ -34,6 +34,9 @@ def autores():
 def contato():
     return jsonify({"email": "contato@ciapi.com", "telefone": "(11) 99999-9999"})
 
+import os
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
     
