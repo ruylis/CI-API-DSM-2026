@@ -23,3 +23,6 @@ jobs:
 
       - name: Rodar testes
         run: python -m pytest
+        
+      - name: Simular Deploy
+        run: echo "Deploy realizado com sucesso"
