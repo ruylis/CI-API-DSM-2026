@@ -10,3 +10,7 @@ def test_status():
     response = client.get("/status")
     assert response.status_code == 200
     
+def test_falha_bloqueio():
+    client = app.test_client()
+    response = client.get("/")
+    assert response.status_code == 500
